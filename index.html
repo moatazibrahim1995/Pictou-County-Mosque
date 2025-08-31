@@ -58,15 +58,24 @@
 <body class="bg-white text-slate-800">
 <!-- Top Bar -->
 <div class="w-full brand-gradient text-white">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between text-base">
-    <!-- Changed text-sm to text-base (or larger like text-lg) -->
-    <p class="font-semibold text-lg">Pictou County Mosque • Trenton, Nova Scotia</p>
-    <div class="flex items-center gap-4 text-lg">
-      <a href="mailto:pictoucountymosque@gmail.com" class="underline decoration-white/50 hover:decoration-white">pictoucountymosque@gmail.com</a>
-      <a href="#directions" class="underline decoration-white/50 hover:decoration-white">Get Directions</a>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+    <!-- Left: Title + Address (short on mobile, full on larger screens) -->
+    <p class="font-semibold leading-tight text-sm sm:text-base overflow-hidden text-ellipsis">
+      <span class="sm:hidden">Pictou County Mosque • 25 Forge St, Trenton, NS</span>
+      <span class="hidden sm:inline">Pictou County Mosque • 25 Forge Street, Trenton, Nova Scotia</span>
+    </p>
+
+    <!-- Right: Email + Directions (stay on one line) -->
+    <div class="flex items-center gap-3 text-xs sm:text-sm whitespace-nowrap">
+      <a href="mailto:pictoucountymosque@gmail.com"
+         class="underline decoration-white/50 hover:decoration-white">pictoucountymosque@gmail.com</a>
+      <span class="opacity-60">|</span>
+      <a href="#directions"
+         class="underline decoration-white/50 hover:decoration-white">Get Directions</a>
     </div>
   </div>
 </div>
+
 
   <!-- Header / Hero -->
   <header class="relative overflow-hidden">
@@ -300,5 +309,6 @@
   </script>
 </body>
 </html>
+
 
 
